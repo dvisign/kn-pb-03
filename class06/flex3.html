@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display:flex;
+            margin-bottom:50px;
+        }
+        .box {
+            width:100px;
+            border:1px solid red;
+        }
+        #alignItems1 {
+            align-items : stretch;
+        }
+        #alignItems2 {
+            align-items:flex-start;
+        }
+        #alignItems3 {
+            align-items:flex-end;
+        }
+        #alignItems4 {
+            align-items:center;
+        }
+        #aliginItems5 {
+            align-items:baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex" id="alignItems1">
+        <div class="box">1<br></div>
+        <div class="box">2</div>
+        <div class="box">3<br><br></div>
+    </div>
+    <div class="flex" id="alignItems2">
+        <div class="box">1<br></div>
+        <div class="box">2</div>
+        <div class="box">3<br><br></div>
+    </div>
+    <div class="flex" id="alignItems3">
+        <div class="box">1<br></div>
+        <div class="box">2</div>
+        <div class="box">3<br><br></div>
+    </div>
+    <div class="flex" id="alignItems4">
+        <div class="box">1<br></div>
+        <div class="box">2</div>
+        <div class="box">3<br><br></div>
+    </div>
+    <div class="flex" id="alignItems5">
+        <div class="box">A</div>
+        <div class="box">g</div>
+        <div class="box">q</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+/* header */
+#headers {
+    position:fixed;
+    width:100%;
+    left:0;
+    top:0;
+    z-index:999;
+    background-color:#fff;
+    padding:16px 18px 16px 28px;
+}
+#navs {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#logos {
+
+}
+#logos > h1 {
+    font-weight:400;
+    color:#000;
+    font-size:1.6rem;
+}
+#navBtn > button {
+    display:inline-block;
+    width:54px;
+    height:52px;
+    background-color:transparent;
+    border:0;
+    cursor:pointer;
+    font-size:1.3rem;
+}
+/* /header */
+
+/* section */
+#sectionWrapper {
+    margin-top:84px;
+}
+/* imgListSection */
+#imgListSection {
+    padding-bottom:38px;
+}
+#imgLists {
+    display:flex;
+    flex-wrap:wrap;
+}
+#imgLists > li {
+    width:calc(100% / 4);
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+}
+#imgLists > li::after {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    left: 0;
+    top:0;
+    background-color:rgba(255,255,255,0.3);
+    opacity:0;
+    transition:opacity 0.3s ease-in-out;
+}
+#imgLists > li:hover::after {
+    opacity:1;
+}
+#imgLists > li > button {
+    display:block;
+    padding:0;
+    margin:0;
+    border:0;
+    background-color:transparent;
+} 
+#imgLists > li > button > img {
+    width:100%;
+    display:block;
+    transition:all 0.3s ease-in-out;
+}
+#imgLists > li:hover > button > img {
+    /* transform scale : 크기를 키우거나 줄여줌 */
+    transform:scale(1.2);
+}
+#pagers {
+    display:inline-block;
+    margin-top:26px;
+}
+.pagerNum {
+    display:inline-block;
+    width:38px;
+    height:38px;
+}
+.pagerNum > button {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background:transparent;
+    border:0;
+    /* 
+    border:none;
+    */
+    cursor:pointer;
+    transition:0.3s;
+}
+.pagerNum.active > button,
+.pagerNum > button:hover {
+    background-color:#000;
+    color:#fff;
+}
+.pagerNum.active > button:hover {
+    background-color:#ccc;
+    color:#000;
+}
+/* /imgListSection */
+/* aboutSection */
+#aboutSection {
+    background-color:#616161;
+    color:#fff;
+}
+#aboutSection > .sectionTitle {
+    margin-bottom:49px;
+}
+#aboutInfo {
+    text-align:left;
+    padding-bottom:25px;
+    border-bottom:1px solid #b5b5b5;
+    /* 
+
+    border:1px solid #b5b5b5;
+
+    border-top:1px solid #b5b5b5;
+    border-bottom:1px solid #b5b5b5;
+    border-right:1px solid #b5b5b5;
+    border-left:1px solid #b5b5b5;
+    */
+}
+#myPic {
+    margin-bottom:49px;
+}
+#myPic > img {
+    width:100%;
+}
+#myInfoTxt > .sectionSubTitle {
+    margin-bottom:24px;
+} 
+#infoTxt {
+    font-size:15px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+#infoMail {
+    margin-bottom:24px;
+    position:relative;
+    padding-left:35px;
+    font-size:15px;
+}
+#infoMail::before {
+    content:'mail:';
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+}
+#infoTel {
+    position:relative;
+    font-size:15px;
+    padding-left:24px;
+}
+#infoTel::before {
+    content:'tel:';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#aboutSkill {
+    padding-top:43px;
+    padding-bottom:37px;
+    text-align:left;
+    border-bottom:1px solid #b5b5b5;
+}
+#aboutSkill > .sectionSubTitle {
+    margin-bottom:44px;
+}
+.skillItems {
+    margin-bottom:20px;
+}
+.skillName {
+    font-weight:400;
+    font-size:14px;
+    letter-spacing:5px;
+    margin-bottom:20px;
+}
+.skillChart {
+    position:relative;
+    width:100%;
+    height:30px;
+    background-color:#fff;
+}
+.skillBar {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background-color:#929292;
+}
+.skillPercent {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.percentNum {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    color:#000;
+}
+.skillItems:nth-child(1) .skillBar {
+    width:95%;
+}
+.skillItems:nth-child(2) .skillBar {
+    width:85%;
+}
+.skillItems:nth-child(3) .skillBar {
+    width:80%;
+}
+#downLoadBtn {
+    padding-top:10px;
+}
+#downLoadBtn > button {
+    border:0;
+    background-color:#fff;
+    color:#000;
+    display:inline-block;
+    padding:14px 25px 15px 25px;
+    font-size:15px;
+    line-height:1;
+}
+#aboutPrice {
+    padding-top:43px;
+    text-align:left;
+}
+#aboutPrice > .sectionSubTitle {
+    margin-bottom:34px;
+}
+#priceList {
+    display:flex;
+    justify-content:space-between;
+}
+.priceItems {
+    width:calc(50% - 8px);
+    text-align:center;
+    color:#000;
+    background-color:#fff;
+}
+.priceTitles {
+    padding:30px 10px 32px 10px;
+    font-weight:400;
+    font-size:24px;
+    color:#fff;
+    background-color:#000;
+}
+.productOptionLists {
+    border-bottom:1px solid #ddd;
+    padding:20px 10px 21px 10px;
+}
+.pricePerMonth {
+    padding:20px 10px 21px 10px;
+    border-bottom:1px solid #ddd;
+}
+.pricePerMonth > p:nth-child(1) {
+    font-size:30px;
+    margin-bottom:12px;
+}
+.pricePerMonth > p:nth-child(2) {
+    opacity:0.6;
+}
+.signUpBtn {
+    padding:20px 10px 21px 10px;
+}
+.signUpBtn > a {
+    padding:14px 24px;
+    display:inline-block;
+    transition: 0.3s;
+}
+.signUpBtn > a:hover {
+    background-color:#cdcdcd;
+}
+/* /aboutSection */
+/* contactSection */
+#contactSection .sectionTitle > p {
+    text-align:left;
+    margin-top:15px;
+    line-height:1.5;
+    font-size:15px;
+    font-weight:600;
+}
+#contactForm {
+    margin-top:18px;
+    text-align:left;
+}
+#contactForm input,
+#contactForm label,
+#contactForm textarea,
+#contactForm button {
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    resize:none;
+}
+.form-group:not(:last-child) {
+    margin-bottom:16px;
+}
+#contactForm label {
+    font-weight:600;
+}
+#contactForm input {
+    padding:9px 7px;
+}
+#contactForm button {
+    padding:10px 10px 11px 10px;
+    background-color:#000;
+    color:#fff;
+    border:0;
+    font-size:15px;
+}
+/* /contactSection */
+/* /section */
+
+/* footer */
+#footers {
+    background-color:#9d9d9d;
+}
+#blogInfo {
+    display:flex;
+    padding:50px 0 47px 0;
+    text-align:left;
+}
+#blogInfo > li {
+    width:calc(100% / 3);
+}
+.blogInfoTitle {
+    font-size:24px;
+    font-weight:400;
+    margin-bottom:20px;
+}
+#blogInfoTxt {
+    padding-left:32px;
+}
+#blogPosts {
+    padding-left:50px;
+}
+.blogPostItems {
+    padding:16px;
+    transition:0.3s;
+}
+.blogPostItems:hover {
+    background-color:#000;
+    color:#fff;
+}
+.blogPostItems:not(:last-child) {
+    border-bottom:1px solid #fff;
+}
+.postContents {
+    display:flex;
+    align-items:center;
+}
+.postImg > img {
+    width:50px;
+    display:block;
+}
+.postSubject {
+    margin-left:16px;
+}
+.postSubject > p:nth-child(1) {
+    margin-bottom:3px;
+    font-size:18px;
+}
+#blogTags {
+    padding-left:16px;
+}
+#blogTagList > span {
+    /* 
+    inline, inline-block 차이점
+    상하의 여백이 크기만 차지하느냐, 크기와 공간을 모두차지하느냐의 차이 
+    */
+    display:inline-block;
+    margin-bottom:19px;
+    font-size:12px;
+    background-color:#616161;
+    color:#fff;
+    padding:0 8px;
+    line-height:1.5;
+}
+#blogTagList > span.active {
+    font-size:15px;
+    background-color:#000;
+}
+#copies {
+    padding:25px 0;
+    color:#fff;
+    background-color:#000;
+}
+#copies > a {
+    color:#fff;
+    text-decoration:underline;
+    transition:0.3s;
+}
+#copies > a:hover {
+    opacity:0.6;
+}
+/* /footer */

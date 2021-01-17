@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html,
+body {
+    width:100%;
+    /* 내부여백 */
+    padding:0;
+    /* 외부여백 */
+    margin:0;
+    /* 글자크기 */
+    font-size:16px;
+    /* 박스 기준 */
+    box-sizing:border-box;
+    /* 글자 색상 */
+    color:#777;
+    /* 배경색상 */
+    background-color: none;
+    /* 글자 정렬 */
+    text-align:center;
+    /* 폰트 종류 */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin:0;
+    padding:0;
+}
+
+div,
+ul,
+ol,
+li,
+header,
+section,
+footer {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul,
+ol,
+li {
+    list-style:none;
+}
+
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+/* class */
+.clear,
+.clear::after {
+    /* 가상클래스 생성 */
+    content:'';
+    /* 블록요소 처리 */
+    display:block;
+    /* 클리어 */
+    clear:both;
+}
+.subSection {
+    padding-top:85px;
+    padding-bottom:64px;
+    background-color:#fff;
+}
+.subSectionTitle {
+    font-weight: 400;
+    font-size:24px;
+    margin-bottom:20px;
+}
+.txtItac {
+    font-style:italic;
+}
+.container {
+    width:100%;
+    max-width:916px;
+    margin:0 auto;
+}
+.parTitleArea {
+    width:100%;
+    height:400px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    position:relative;
+}
+.parTitleArea::after {
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.parTitleArea > h2 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:#fff;
+    font-size:36px;
+    letter-spacing:10px;
+    font-weight:400;
+    z-index:1;   
+}
+.btn {
+    background-color:transparent;
+    padding:20px 25px;
+    border:0;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+@media(max-width:916px) {
+    .container {
+        max-width:550px;
+    }
+}
+@media(max-width:576px) {
+    .container {
+        max-width:100%;
+        padding:20px
+    }
+    .parTitleArea {
+        height:300px;
+    }
+    .parTitleArea > h2 {
+        font-size:30px;
+    }
+    .subSection {
+        padding-top:40px;
+        padding-bottom:30px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .boxWrapper {
+      width:600px;
+      height:600px;
+      position:relative;
+      background-color:yellow;
+    }
+    .box {
+      position:absolute;
+      width:200px;
+      height:200px;
+    }
+    .bgRed {
+      background-color:blue;
+    }
+    #box1 {
+      top:0;
+      left:0;
+    }
+    #box2 {
+      top:0;
+      /* left:400px; */
+      right:0;
+    }
+    #box3 {
+      /* top:200px; */
+      /* left:200px; */
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+    }
+    #box4 {
+      /* top:400px; */
+      bottom:0;
+      left:0;
+    }
+    #box5 {
+      top:400px;
+      left:400px;
+    }
+  </style>
+</head>
+<body>
+  <div class='boxWrapper'>
+    <div id="box1" class='box bgRed'></div>
+    <div id="box2" class='box bgRed'></div>
+    <div id="box3" class='box bgRed'></div>
+    <div id="box4" class='box bgRed'></div>
+    <div id="box5" class='box bgRed'></div>
+  </div>
+</body>
+</html>

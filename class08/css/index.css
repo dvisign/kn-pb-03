@@ -1,0 +1,141 @@
+/* 내비게이션 */
+#headers {
+    width:100%;
+}
+#navs {
+    position:fixed;
+    width:100%;
+    left:0;
+    top:0;
+    background-color:#fff;
+    padding:20px 35px;
+}
+#navBtns > button,
+#mailBtns > button {
+    background-color:transparent;
+    border:0;
+    font-size:20px;
+}
+#logos > h1 {
+    font-size:24px;
+}
+#sideNavs {
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+    background-color:#fff;
+    border-right:1px solid #e1e1e1;
+    display:none;
+}
+#sideNavs a {
+    display:inline-block;
+    padding:26px 20px;
+    text-align:left;
+    font-size:24px;
+}
+/* /내비게이션 */
+/* foodlist */
+#foodList {
+    margin-top:100px;
+    margin-bottom:130px;
+}
+#boardFrame {
+    width:100%;
+    height:600px;
+    overflow:hidden;
+}
+.footImgItems {
+    margin-bottom:50px;
+}
+.foodImgs > img {
+    display:block;
+    width:100%;
+}
+.foodSubject {
+    margin-top:15px;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+.foodText {
+    font-size:15px;
+    line-height:1.4;
+}
+.pageLists {
+    text-align:center;
+}
+.pageLists .page-link {
+    width:38px;
+    height:38px;
+    transition:0.3s;
+}
+.pageLists .page-item.active > .page-link,
+.pageLists .page-item > .page-link:hover {
+    background-color:#000;
+    color:#fff;
+}
+.pageLists .page-item.active > .page-link:hover {
+    background-color:#ccc;
+}
+/* /foodlist */
+/* about */
+#about {
+    margin-bottom:170px;
+}
+#aboutImg {
+    margin-top:40px;
+    margin-bottom:45px;
+}
+#slogan {
+    margin:20px 0;
+    font-style:italic;
+}
+/* /about */
+/* footer */
+#footers {
+    padding-bottom:40px;
+}
+#footerText > h4,
+#blogPosts > h4,
+#tags > h4 {
+    margin-bottom:27px;
+}
+#footerText > p {
+    font-size:14px;
+    line-height:1.5;
+}
+#copy {
+    margin-top:15px;
+}
+#copy > a {
+    text-decoration:underline;
+}
+.postItems > a {
+    padding:16px;
+    transition:0.3s;
+}
+.postItems > a:hover {
+    color:#000;
+    background-color:#ccc;
+}
+.postThumb {
+    width:50px;
+    margin-right:17px;
+}
+.postThumb > img {
+    width:100%;
+}
+.postText > p {
+    font-size:15px;
+}
+.tagItems {
+    background-color:#616161;
+    color:#fff;
+    font-size:12px;
+    padding:3px 8px;
+}
+.tagItems.active {
+    background-color:#000;
+    font-size:15px;
+}
+/* /footer */

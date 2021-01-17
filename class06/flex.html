@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clear {
+            content:"";
+            display:block;
+            clear:both;
+        } 
+        #flexModel1 {
+            display:flex;
+            /* 정렬 방향 */
+            flex-direction: row;
+        }
+        #flexModel2 {
+            margin-top:50px;
+            display:flex;
+            flex-direction: row-reverse;
+        }
+        #flexModel3 {
+            margin-top:50px;
+            display:flex;
+            flex-direction: column;
+        }
+        #flexModel4 {
+            margin-top:50px;
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        .box {
+            width:100px;
+            height:100px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="flexModel1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div id="flexModel2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div id="flexModel3">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div id="flexModel4">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

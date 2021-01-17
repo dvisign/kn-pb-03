@@ -1,0 +1,39 @@
+.box {
+    width:100px;
+    height:100px;
+}
+.redBg {
+    background:red;
+}
+.blueBg {
+    background:blue;
+}
+#boxWrapper > .box {
+    float:left;
+}
+
+#checkbox {
+    width:300px;
+    height:300px;
+    background:yellow;
+    margin-top:50px;
+    /* 
+    margin: 50px 0 0 0;
+    */
+}
+#checkbox .box {
+    float:left;
+}
+#checkbox > .clear:nth-child(1) > .box:nth-child(2),
+#checkbox > .clear:nth-child(3) > .box:nth-child(2) {
+    margin-left:100px;
+}
+
+#checkbox > .clear:nth-child(2) > .box {
+    margin-left:100px;
+}
+/*
+margin : 0 auto;
+float가 되지 않은 한에서
+블록 요소들이 중앙으로 배치
+*/

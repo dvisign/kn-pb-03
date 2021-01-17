@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html,
+body {
+    width:100%;
+    /* 내부여백 */
+    padding:0;
+    /* 외부여백 */
+    margin:0;
+    /* 글자크기 */
+    font-size:calc(13px + 0.2vw);
+    /* 박스 기준 */
+    box-sizing:border-box;
+    /* 글자 색상 */
+    color:#000;
+    /* 배경색상 */
+    background-color: none;
+    /* 글자 정렬 */
+    text-align:center;
+    /* 폰트 종류 */
+    font-family: 'Raleway', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin:0;
+    padding:0;
+}
+
+div,
+ul,
+ol,
+li,
+header,
+section,
+footer {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul,
+ol,
+li {
+    list-style:none;
+}
+
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+/* class */
+.clear,
+.clear::after {
+    /* 가상클래스 생성 */
+    content:'';
+    /* 블록요소 처리 */
+    display:block;
+    /* 클리어 */
+    clear:both;
+}

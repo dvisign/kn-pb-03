@@ -1,0 +1,39 @@
+th,
+td,
+tr {
+    /* 테두리 */
+    border:1px solid #ccc;
+}
+#calendar {
+    width:700px;
+}
+.sun {
+    color:red;
+}
+.sat {
+    color:blue;
+}
+.next {
+    /* 투명도 */
+    /* 1 ~ 0.xxxx */
+    opacity:0.2;
+}
+/*  > : 부모 자식관계 : 제한적 
+#calendar > td {
+
+} 
+*/
+/* 선택자 안에 모든 자식 : 광범위
+#calendar td {
+
+} 
+*/
+
+#calendar > tbody td {
+    height:100px;
+    /* 텍스트 y축정렬 */
+    vertical-align:top;
+}
+#calendar > tbody a {
+    color:#0c43b7;
+}

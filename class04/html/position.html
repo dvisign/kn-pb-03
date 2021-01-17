@@ -1,0 +1,73 @@
+<!-- html 버전명시 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 언어셋 -->
+    <meta charset="UTF-8">
+    <!-- 반응형 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 페이지의 타이틀 -->
+    <title>position model</title>
+    <!-- 스타일시트 -->
+    <!-- <link rel="stylesheet" href="../css/...css" > -->
+    <!-- 자바스크립트 -->
+    <!-- <script src="../js/...js"></script> -->
+    <style>
+      html {
+        height:1000px;
+        border:1px solid blue;
+      }
+      body {
+        height:800px;
+        border:1px solid green;
+      }
+      .boxWrapper {
+        height:600px;
+        background-color:yellow;
+        position:relative;
+      }
+      .box {
+        width:200px;
+        height:200px;
+        position:absolute;
+      }
+      .bgRed {
+        background-color:red;
+      }
+      .bgBlue {
+        background-color:blue;
+      }
+      .bgGreen {
+        background-color:green;
+      }
+      #box1 {
+        left:100px;
+        top:100px;
+        z-index:1;
+      }
+      #box2 {
+        left:200px;
+        top:200px;
+        z-index:3;
+      }
+      #box3 {
+        left:150px;
+        top:150px;
+        z-index:2;
+      }
+      #box4 {
+        position:fixed;
+        bottom:100px;
+        right:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='boxWrapper'>
+      <div id="box1" class='box bgRed'></div>
+      <div id="box2" class='box bgBlue'></div>
+      <div id="box3" class="box bgGreen"></div>
+      <div id="box4" class="box bgRed"></div>
+    </div>
+  </body>
+</html>

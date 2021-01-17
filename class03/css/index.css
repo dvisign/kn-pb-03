@@ -1,0 +1,192 @@
+#wrapper {
+  width: 100%;
+}
+
+/* header */
+#page_title {
+  margin-top: 55px;
+  margin-bottom: 28px;
+  /*
+    margin: 55px 0 28px 0; 
+    */
+  font-weight: 600;
+  font-size: 36px;
+}
+
+#page_text>span {
+  background-color: #000;
+  color: #fff;
+  padding: 2px 9px;
+  /* 
+
+    padding-right:9px;
+    padding-left:9px;
+
+    padding:0 9px 0 9px;
+    */
+}
+
+/* /header */
+
+/* section */
+#contents_wrapper {
+  margin-top: 70px;
+}
+
+#contents_wrapper>div {
+  float: left;
+}
+
+#contents_left {
+  width: 900px;
+  margin-right:calc(1365px - 900px - 435px);
+  /* 
+  margin-right:calc(1365px - (900px + 435px)); 
+  */
+}
+
+#contents_right {
+  width: 435px;
+}
+
+.cards {
+  /* 
+  inset 내부외부(생략가능), x축 y축 투명도 그림자크기 색상 
+  */
+  box-shadow:4px 6px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom:40px;
+}
+
+.contentsImg > img {
+  width: 100%;
+  display:block;
+}
+
+.contentsTxt {
+  background-color: #fff;
+  text-align: left;
+  padding: 18px 40px 15px 16px;
+  /* 
+    padding-top: 18px;
+    padding-left:16px;
+    padding-right:40px;
+    padding-bottom:15px;
+    */
+}
+
+.contentsBtn > a {
+  float : left;
+  display:inline-block;
+  padding:15px 25px;
+  border:1px solid #ccc;
+  font-size:14px;
+  font-weight: 600;
+  transition:0.3s;
+}
+/* 마우스 오버이벤트 */
+.contentsBtn > a:hover {
+  background-color:#ccc;
+}
+
+.contentsBtn > span {
+  float: right;
+  font-size:14px;
+  font-weight: 600;
+  padding-top:15px;
+}
+.contentsBtn > span > span {
+  background-color:#000;
+  padding:4px 8px;
+  margin-left:12px;
+  color:#fff;
+  font-weight:400;
+}
+.cardTitle {
+  margin-bottom:25px;
+  font-size:24px;
+  font-weight:600;
+}
+.cardDateTime {
+  margin-bottom:38px;
+  font-size:18px;
+}
+.cardDateTime > span {
+  /* 투명도 */
+  opacity:0.6;
+}
+.cardTxt {
+  margin-bottom:36px;
+  font-size:15px;
+  line-height:1.5;
+}
+#contents_right .cardTxt {
+  margin-bottom:0;
+}
+.posts {
+  box-shadow:4px 6px 15px 0px rgba(0, 0, 0, 0.3);
+  text-align:left;
+}
+.categoryTitle {
+  font-size:20px;
+  padding:25px 17px;
+  background-color:#f1f1f1;
+  font-weight:400;
+}
+.postLists {
+  background-color:#fff;
+}
+.postItems {
+  padding:16px;
+  transition:0.3s;
+}
+.postItems:hover {
+  background-color:#ddd;
+}
+/* not:(선택대상) 선택 대상을 제외한 모두 선택  */
+/* 선택자:first-child - 선택자 중에서 첫번째 형제 */
+/* 선택자:last-child - 선택자중에서 마지막 형제 */
+/* 선택자:nth-child(n) - 선택자중에서 n번째 형제 */
+.postItems:not(:last-child) {
+  border-bottom:1px solid #ddd;
+}
+.postImgs,
+.postTxt {
+  float:left;
+}
+.postImgs {
+  margin-right:16px;
+}
+.postImgs > img {
+  width:50px;
+  display:block;
+}
+.postTxt {
+  padding-top:4px;
+}
+.postTxt > h5 {
+  font-size:18px;
+  font-weight:400;
+  margin-bottom:4px;
+}
+.tags {
+  text-align:left;
+  margin-top:40px;
+  box-shadow:4px 6px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.tagLists {
+  padding:16px;
+  background-color:#fff;
+}
+.tagItems {
+  display:inline-block;
+  background-color:#f1f1f1;
+  font-size:12px;
+  padding:6px 8px;
+  margin-bottom:19px;
+}
+.tagItems.active {
+  background-color:#000;
+  color:#fff;
+}
+
+/* /section */
